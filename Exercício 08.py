@@ -3,4 +3,4 @@
 SalárioHora = float(input('Quanto você ganha por hora? '))
 HorasTrabalhadas = float(input('Quantas horas você trabalhou? '))
 SalárioMês = SalárioHora * HorasTrabalhadas
-print('O seu salário é R$ {}.'.format(SalárioMês))
+print('O seu salário é R$ {}.'.format(SalárioMês)   )
