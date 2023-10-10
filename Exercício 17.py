@@ -17,3 +17,9 @@ PreçoLataDeTintaPequeno = QuantidadeDeLatasDeTintaPequeno * 25
 
 print('Você vai precisar de {} latas de tinta de 18 litros a custo de R$ {}.'.format(QuantidadeDeLatasDeTintaGrande, PreçoLataDeTintaGrande))
 print('Você vai precisar de {} latas de tinta de 3,6 litros a um custo de R$ {}. '.format(QuantidadeDeLatasDeTintaPequeno, PreçoLataDeTintaPequeno))
+
+if QuantidadeDeLatasDeTintaGrande <= 18:
+    QuantidadeDeLatasDeTintaGrande = 1
+print(QuantidadeDeLatasDeTintaGrande)
+    
+    
