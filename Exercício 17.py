@@ -4,8 +4,16 @@
 ## comprar apenas galões de 3,6 litros;
 ## misturar latas e galões, de forma que o desperdício de tinta seja menor. Acrescente 10% de folga e sempre arredonde os valores para cima, isto é, considere latas cheias.
 
-Base = int(input('Entre com a base do quadrado em metros. '))
-Altura = int(input('Entre com a altura do quadrado em metros. '))
+Base = float(input('Entre com a base do quadrado em metros. '))
+Altura = float(input('Entre com a altura do quadrado em metros. '))
 Área = Base * Altura
-
+print('A área a ser pintada é {}m²'.format(Área))
 QuantidadeDeLitrosDeTinta = Área / 6
+print('Você vai precisar de {} litros de tinta pra pintar {}m².'.format(QuantidadeDeLitrosDeTinta, Área))
+QuantidadeDeLatasDeTintaGrande = QuantidadeDeLitrosDeTinta / 18
+QuantidadeDeLatasDeTintaPequeno = QuantidadeDeLitrosDeTinta / 3.6
+PreçoLataDeTintaGrande = QuantidadeDeLatasDeTintaGrande * 80
+PreçoLataDeTintaPequeno = QuantidadeDeLatasDeTintaPequeno * 25
+
+print('Você vai precisar de {} latas de tinta de 18 litros a custo de R$ {}.'.format(QuantidadeDeLatasDeTintaGrande, PreçoLataDeTintaGrande))
+print('Você vai precisar de {} latas de tinta de 3,6 litros a um custo de R$ {}. '.format(QuantidadeDeLatasDeTintaPequeno, PreçoLataDeTintaPequeno))
